@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Book Vault- Home</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            margin: 0; 
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            color: white;
+        }
+        .cover {
+            background-color: lightcoral;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .catalogue {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .catalogue h2 {
+            text-align: center;
+        }
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .book-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+        .book-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .book-title {
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .author { 
+            color: #555; 
+            font-size: 16px;
+        }
+        .cover {
+    background-color: lightcoral;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.cover h1, .cover p {
+    position: relative;
+    z-index: 2;
+}
+
+    </style>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="#catalogue">Catalogue</a>
+    </div>
+
+   <!-- Cover Section -->
+<div class="cover">
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="images/read.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <h1>The Book Vault</h1>
+    <p>Your one-stop shop for all your reading needs!</p>
+</div>
+
+
+    <!-- Book Catalogue -->
+    <div class="catalogue" id="catalogue">
+        <h2><u>Book Catalogue</u></h2>
+        <div class="book-grid">
+            <div class="book-item">
+                <img src="images/rdpd.jpeg" alt="Rich Dad Poor Dad">
+                <div class="book-title">Rich Dad Poor Dad</div>
+                <div class="author">Robert Kiyosaki</div>
+            </div>
+            <div class="book-item">
+                <img src="images/art.jpeg" alt="The Subtle Art of Not Giving a Fuck">
+                <div class="book-title">The Subtle Art of Not Giving a Fuck</div>
+                <div class="author">Mark Manson</div>
+            </div>
+            <div class="book-item">
+                <img src="images/deep.jpg" alt="Deep Work">
+                <div class="book-title">Deep Work</div>
+                <div class="author">Cal Newport</div>
+            </div>
+            <div class="book-item">
+                <img src="images/habits.jpeg" alt="Atomic Habits">
+                <div class="book-title">Atomic Habits</div>
+                <div class="author">James Clear</div>
+            </div>
+            <div class="book-item">
+                <img src="images/ikigai.jpeg" alt="Ikigai">
+                <div class="book-title">Ikigai</div>
+                <div class="author">Hector Garcia and Francesc Miralles</div>
+            </div>
+            <div class="book-item">
+                <img src="images/intel.jpeg" alt="The Intelligent Investor">
+                <div class="book-title">The Intelligent Investor</div>
+                <div class="author">Benjamin Graham</div>
+            </div>
+            <div class="book-item">
+                <img src="images/power.jpeg" alt="The Power of Subconscious Mind">
+                <div class="book-title">The Power of Subconscious Mind</div>
+                <div class="author">Moby</div>
+            </div>
+            <div class="book-item">
+                <img src="images/start.jpg" alt="The Science Of Getting Started">
+                <div class="book-title">The Science Of Getting Started</div>
+                <div class="author">Patrick King</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
